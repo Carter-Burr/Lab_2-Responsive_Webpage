@@ -105,11 +105,19 @@ td {
   color: black;
 }
 
+.important-responsive {
+  display:none;
+}
+
 
 /* When the screen is less than 800 pixels wide */
 @media screen and (max-width: 800px) {
   /* Hide all links, except for the selected tab */
   .topnav a:not(.active) {
+    display: none;
+  }
+ 
+  #myVideo, .fullvid {
     display: none;
   }
 
@@ -118,6 +126,12 @@ td {
     float: right;
     display: block;
   }
+
+  .important-responsive {
+    display:block;
+    padding-top: 10px;
+  }
+  
 }
 
 /* When the screen is less than 800 pixels wide, if the user clicks on the icon */

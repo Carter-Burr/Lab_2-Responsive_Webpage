@@ -5,19 +5,6 @@ let icon = document.getElementsByClassName("icon")[0];
 icon.addEventListener('click', responsive_control);
 
 
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-
 // Function to control the responsiveness of the navigation bar
 function responsive_control() {
   // Get the element with the id "myTopnav"
@@ -31,6 +18,20 @@ function responsive_control() {
     // If it's not, remove the "responsive" class from the element
     x.className = "topnav";
   }
-
   
 }
+
+
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+
