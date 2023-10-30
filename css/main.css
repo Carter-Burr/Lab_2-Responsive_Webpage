@@ -109,9 +109,30 @@ td {
   display:none;
 }
 
+.btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 40px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 1
+}
+
+.btn a {
+  color: white;
+}
+
 
 /* When the screen is less than 800 pixels wide */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   /* Hide all links, except for the selected tab */
   .topnav a:not(.active) {
     display: none;
@@ -138,7 +159,7 @@ td {
 /* the "responsive" class attribute will be added to the topnav by the JavaScript code */
 /* This media query sets the style for the unfolded topnav */
 /* It makes the topnav look good on small screens (display the links vertically instead of horizontally)  */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .topnav.responsive {
     position: relative;
   }
